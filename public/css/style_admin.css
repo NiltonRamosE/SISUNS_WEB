@@ -1,0 +1,98 @@
+.admin_span_title{
+    color:rgb(92 167 134);
+    font-size: .95em;
+}
+
+.user_title{
+    background-color: black;
+    background: rgb(33 37 41);
+}
+
+
+
+/*GESTIÓN DE IMÁGENES DE CARRUSEL*/
+.img-thumbnail {
+    max-width: 100%;
+    position: relative;
+    transition: all 0.3s ease; /* Transición para suavizar el efecto */
+}
+
+.upload-btn {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.418); /* Cambiar la opacidad en hover */
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease; /* Transición para suavizar el efecto */
+    color: gray;
+}
+
+.img-thumbnail:hover .upload-btn {
+    transition: all 0.3s ease; /* Transición para suavizar el efecto */
+    display: block;
+    color: rgb(53, 52, 52);
+}
+
+.img-thumbnail:hover .upload-btn:hover {
+    transition: all 0.3s ease; /* Transición para suavizar el efecto */
+    background-color: rgba(255, 255, 255, 0.616); /* Cambiar la opacidad en hover */
+}
+
+
+/*GESTIÓN DE NOTICIAS*/
+.input-container {
+    position: relative;
+    display: inline-block;
+}
+
+.input-container input {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: color 0.3s ease; /* Transición para cambiar el color del texto */
+}
+
+.input-container input:hover {
+    color: blue; /* Cambia el color del texto cuando se hace hover */
+}
+
+.btn-edit {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    color: gray;
+    transition: color 0.3s ease; /* Transición para cambiar el color del texto */
+}
+
+.btn-edit:hover {
+    color: blue; /* Cambia el color del texto cuando se hace hover */
+}
+
+.btn-add-news{
+    border: none;
+    background-color: rgb(92 167 134);
+}
+
+.btn-add-news:hover{
+    border: none;
+    background-color: rgb(113, 187, 155);
+}
+
+
+
+/*GESTIÓN DE PROYECTOS: */
+.container_card {
+    height: 500px;
+}
+
+.container_list {
+    height: 400px; /* Altura máxima del div */
+    overflow-y: auto; /* Habilita el scroll vertical */
+}
